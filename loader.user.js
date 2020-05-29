@@ -9,4 +9,4 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
-eval($.get("https://github.com/charliemin2009/gui/raw/master/blumer.js"))
+eval($.get("https://raw.githubusercontent.com/charliemin2009/gui/master/blumer.js"))
