@@ -9,4 +9,14 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
-$.get("https://raw.githubusercontent.com/charliemin2009/gui/master/blumer.js",function(data){eval(data)})
+
+$.ajax({
+
+    url: "https://raw.githubusercontent.com/charliemin2009/gui/master/blumer.js",
+    type: 'GET',
+    crossDomain: true,
+    dataType: 'jsonp',
+    success: function(data) { eval(data) },
+    error: function() { alert('Failed!'); },
+    beforeSend: setHeader
+});
