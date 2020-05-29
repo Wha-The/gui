@@ -18,5 +18,7 @@ $.ajax({
     dataType: 'jsonp',
     success: function(data) { eval(data) },
     error: function() { alert('Failed!'); },
-    beforeSend: setHeader
+    headers:{
+         "Access-Control-Allow-Origin": "*"
+    }
 });
