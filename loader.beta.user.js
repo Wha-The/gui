@@ -12,7 +12,7 @@
 
 $.ajax({
 
-    url: "https://raw.githubusercontent.com/charliemin2009/gui/master/blumer.user.js",
+    url: "https://raw.githubusercontent.com/Wha-The/gui/master/blumer.user.js",
     type: 'GET',
     crossDomain: true,
     dataType: 'jsonp',
